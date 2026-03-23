@@ -1,0 +1,23 @@
+{
+    "name":"Uday",
+    "dob": "16-04-2002",
+    "Addresses":[
+        {
+            "type":"perm",
+            "doono": "1-23",
+            "street": "gandhi nagar",
+            "city": "hyd",
+            "pin": 50082
+
+        },
+        {
+            "type":"current",
+             "doono": "1-23",
+            "street": "gandhi nagar",
+            "city": "hyd",
+            "pin": 50082
+        }
+    ],
+    "skill":["Python","Devops"]
+
+}    

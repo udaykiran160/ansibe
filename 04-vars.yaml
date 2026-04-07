@@ -1,6 +1,6 @@
 - name : play level varaibles 
   hosts: local
-  connections: local
+  connection: local
   vars:
     COURSE : DevOps with AWS
     DURATION : 120 
@@ -9,6 +9,6 @@
     - name : to print the varaibles
       ansible.builtin.debug :
         msg : "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
-        
+
 
   

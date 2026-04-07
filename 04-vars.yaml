@@ -1,14 +1,24 @@
-- name : play level varaibles 
+# - name : play level varaibles 
+#   hosts: local
+#   connection: local
+#   vars:
+#     COURSE : DevOps with AWS
+#     DURATION : 120 
+#     TRAINER : Shivakumar reddy
+#   tasks:
+#     - name : to print the varaibles
+#       ansible.builtin.debug :
+#         msg : "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+
+  - name: play level variables
   hosts: local
-  connection: local
+  connection: local # Ansible is connecting to localhost
   vars:
-    COURSE : DevOps with AWS
-    DURATION : 120 
-    TRAINER : Shivakumar reddy
+    COURSE: Ansible
+    DURATION: 10HRS
+    Trainer: Sivakumar reddy
   tasks:
-    - name : to print the varaibles
-      ansible.builtin.debug :
-        msg : "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
-
-
-  
+  - name: print the course info
+    ansible.builtin.debug:
+      msg: "Course Name is: {{ COURSE }}, Duratioin: {{ DURATION }}, Trainer: {{ Trainer }}"

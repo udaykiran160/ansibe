@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   var_files:
-  course.yaml
+  - course.yaml
   tasks:
    -name: print the course info through files
     ansible.builtin.debug:

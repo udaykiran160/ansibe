@@ -1,7 +1,7 @@
 - name: conditions in yaml
   hosts: local
   connection: local
-  var: 
+  vars: 
     number: 5
   tasks: 
     -name : check number is less than 10

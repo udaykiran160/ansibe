@@ -1,6 +1,7 @@
 - name: gathering facts in ansible
   hosts: local
   connection: local
+  become: yes
   tasks: 
   - name: install nginx if it is redhat
     ansible.builtin.dnf:

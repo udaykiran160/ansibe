@@ -3,7 +3,15 @@
   connection: local
   vars: 
     technologies: Devops, Linux, shell, Ansible
+    dict:
+      Application: payment
+      Environment: dev
+
   tasks: 
   - name: convert string to list
     ansible.builtin.debug:
       msg: "{{technologies | split(',')}}"
+
+  - name: converting dict to list
+    ansible.builtin.debug:
+      msg: "{{dict | dict2items }}"

@@ -6,6 +6,11 @@
     dict:
       Application: payment
       Environment: dev
+    list:
+      - key: Application
+        value: payment
+      - key: Environment
+        value: dev
 
   tasks: 
   - name: convert string to list
@@ -15,3 +20,7 @@
   - name: converting dict to list
     ansible.builtin.debug:
       msg: "{{dict | dict2items }}"
+
+  - name: converting list to dict / map
+    ansible.builtin.debug:
+      msg: "{{dict | item2diccts }}"

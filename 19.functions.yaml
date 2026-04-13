@@ -23,4 +23,4 @@
 
   - name: converting list to dict / map
     ansible.builtin.debug:
-      msg: "{{dict | item2diccts }}"
+      msg: "{{dict | item2dicts }}"

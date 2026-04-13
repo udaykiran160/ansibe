@@ -4,6 +4,6 @@
   vars: 
     technologies: Devops, Linux, shell, Ansible
   tasks: 
-    name: convert string to list
-    ansible.builtin.debug:
+    - name: convert string to list
+      ansible.builtin.debug:
       msg: "{{technologies | split(',')}}"

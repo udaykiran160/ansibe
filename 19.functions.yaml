@@ -24,3 +24,12 @@
   - name: converting list to dict 
     ansible.builtin.debug:
       msg: "{{ list | items2dict }}"
+
+  - name: read the yaml and store in the variable
+    ansible.builtin.set_fact:
+      student_yaml: "{{lookup('file','student.yaml') | from_yaml}}"
+
+  - name: convert yaml to json
+    ansible.builtin.debug:
+      msg: "{{json: to_json}}"
+

@@ -5,6 +5,7 @@
     technologies: Devops, Linux, shell, Ansible
     name: Uday Kiran Naidu
     gmail: UdayIrANnaidu@gmail.com
+    ipaddress: "19222.168.0.1"
     dict:
       Application: payment
       Environment: dev
@@ -47,5 +48,9 @@
   - name: convert to lower 
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
+  
+  - name: check IP is valid or not
+    ansible.builtin.debug: 
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 
 

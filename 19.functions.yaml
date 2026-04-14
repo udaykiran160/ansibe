@@ -46,6 +46,6 @@
 
   - name: convert to lower 
     ansible.builtin.debug:
-      msg: "{{ name | lower }}"
+      msg: "{{ gmail | lower }}"
 
 

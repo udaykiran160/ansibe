@@ -44,4 +44,8 @@
     ansible.builtin.debug:
       msg: "{{name | upper  }}"
 
+  - name: convert to lower 
+    ansible.builtin.debug:
+      msg: "{{ name | lower }}"
+
 
